@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        	<link rel="icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+        	<link rel="shortcut icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<title>Kareoke Clicker</title>
+		<style>
+			#curWord {text-align: center;}
+			#topBtns {text-align: center;}
+			#curSong {text-align: center;}
+		</style>
+	</head>
+	<body>
+		<a href="../index.html"><button><</button></a>
+		<p id='topBtns'>
+			<button onclick='playSong()'>PRESS FOR LYRICS</button>
+			<button onclick='restartSong()'>RESTART</button>
+			<select onchange="findSong()" id="songSlct">
+    			<option value="defaultSong">CHOOSE SONG</option>
+  				<option value="neverGonnaGiveYouUp">never gonna give you...</option>
+  				<option value='yeetYeetSkrrt'>yeet</option>
+  				<option value='bakaMitai'>馬鹿みたい</option>
+  				<option value='dirtyHarry'>dirty harry</option>
+			</select>
+		</p>
+		<hr>
+		<h1 id='curWord'></h1>
+		<hr>
+		<h1 id='curSong'></h1>
+		<script type="text/javascript" src='script.js'></script>
+	</body>
+</html>
+
+<!--
+to add a song, add the lyrics and the name in wakaWaka/script.js:5, add the option in wakaWaka/wakaWaka.html:18, and add the connection in wakaWaka/script.js:24
+-->
